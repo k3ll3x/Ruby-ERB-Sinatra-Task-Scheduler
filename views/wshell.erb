@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% File.open("views/head.erb","r") do |content| %>
+        <% content.each_line do |line| %>
+            <%= line %>
+        <% end %>
+    <% end %>
+</head>
+<body class="w3-container w3-white">
+    <% File.open("views/header.erb","r") do |content| %>
+        <% content.each_line do |line| %>
+            <%= line %>
+        <% end %>
+    <% end %>
+    <div class="w3-display-container w3-display-topmiddle w3-light-gray" style="width:70%">
+        <div class="w3-container w3-lightgray">
+            <h1 class="w3-center">Scheduler</h1>
+            <br>
+            <ul class="w3-ul w3-card-4">
+                <form action="/history" method="post" class="w3-container w3-center w3-light-grey">
+                    <p>
+                        <h3><br><input type="text" name="comd" placeholder=">"></h3>
+                    </p>
+                    <p>
+                        <br><input type="date" name="duedate">
+                    </p>
+                    <p>
+                        <button class="w3-button w3-white w3-border w3-border-blue">rekord</button>
+                    </p>
+                </form>
+            </ul>
+        </div>
+        <br>
+        <% if params["cmd"] %>
+
+        <div class="w3-container w3-orange w3-sand">
+        <% File.open("views/calendar.erb","r") do |content| %>
+            <% content.each_line do |line| %>
+                <%= line %>
+            <% end %>
+        <% end %>
+        </div>
+
+            <div class="w3-container w3-sand">
+                <h1 class="w3-white w3-center">Tasks</h1>
+                <br>
+                    <table>
+                    <tr class="w3-light-gray">
+                        <th>Id</th>
+                        <th>Timestamp</th>
+                        <th>Task</th>
+                        <th>Due-Date</th>
+                        <th><form action="/delete_all" method="get"><button class="w3-button w3-orange">Delete All</button></form></th>
+                    </tr>
+                        <% for i in params["cmd"] %>
+                            <form action="/delete" method="post">
+                                <tr>
+                                    <td>
+                                        <input type="text" name="id" value="<%= i["id"] %>" readonly>
+                                    </td>
+                                    <td>
+                                        <%= i["timestamp"] %>
+                                    </td>
+                                    <td>
+                                        <%= i["comd"] %>
+                                    </td>
+                                    <td>
+                                        <%= i["duedate"] %>
+                                    </td>
+                                    <td>
+                                        <button class="w3-button w3-red">delete</button>
+                                    </td>
+                                </tr>
+                            </form>
+                        <% end %>
+                    </table>
+                <br>
+            </div>
+        <% end %>
+    </div>
+</body>
+</html>
