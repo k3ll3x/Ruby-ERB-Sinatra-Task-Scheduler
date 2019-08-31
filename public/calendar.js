@@ -248,6 +248,12 @@ $.getJSON('./history.json', function(data) {
 			//days[i].onclick = displayTask(taskArr[counter]);
 			counter++;
 		}
+<<<<<<< HEAD
+=======
+		if(days[i].innerText == today && (days[i].innerText == dataArr[days[i].innerText] && dataArr[days[i].innerText])){
+			days[i].className = "w3-red";
+		}
+>>>>>>> Tasks sorted by due date
 		days[i].className = days[i].className + " w3-center";
     }
 });

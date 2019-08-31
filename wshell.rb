@@ -2,9 +2,13 @@ require "sinatra"
 require "json"
 
 #set :port, 80
+<<<<<<< HEAD
 set :port, 88
 
 $password = "1234"
+=======
+#set :port, 88
+>>>>>>> Tasks sorted by due date
 
 def save_thought(n_dink)
 	#format thought
@@ -20,6 +24,7 @@ def save_thought(n_dink)
 		new_data.push(dink)
 	end
 	new_data.push(n_dink)
+	new_data = new_data.sort_by { |hash| hash['duedate'].tr('-','').to_i }
 	File.open("./public/history.json","w") do |file|
 		file.write(new_data.to_json)
 	end
@@ -61,7 +66,10 @@ get "/" do
 	data_hash = JSON.parse(file)
 	params["cmd"] = data_hash
 	erb :wshell
+<<<<<<< HEAD
 
+=======
+>>>>>>> Tasks sorted by due date
 end
 
 
