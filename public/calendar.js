@@ -230,23 +230,21 @@ $.getJSON('./history.json', function(data) {
 	let taskArr = {};
 	let j = 0;
     for(let i of data){
-		dataArr[i.duedate.split('-')[2]] = i.duedate.split('-')[2];
+		dataArr[parseInt(i.duedate.split('-')[2])] = parseInt(i.duedate.split('-')[2]).toString();
 		taskArr[j] = i.comd;
 		j++;
     }
 
-	let counter = 0;
 	let today = new Date();
-	today = today.toString().split(" ")[2];
+	today = parseInt(today.toString().split(" ")[2]);
     for(let i=0;i<42;i++){
 		if(days[i].innerText == today){
 			days[i].className = "w3-orange";
 		}
-        if(days[i].innerText == dataArr[days[i].innerText] && dataArr[days[i].innerText]){
+		if(days[i].innerText == dataArr[days[i].innerText] && dataArr[days[i].innerText]){
 			days[i].className = "w3-blue";
 			//days[i].innerText = days[i].innerText + " (" + taskArr[counter] + ")";
 			//days[i].onclick = displayTask(taskArr[counter]);
-			counter++;
 		}
 		if(days[i].innerText == today && (days[i].innerText == dataArr[days[i].innerText] && dataArr[days[i].innerText])){
 			days[i].className = "w3-red";
