@@ -4,4 +4,4 @@
 #check if port 80 is binded
 #lsof -i tcp:80
 #ruby wshell.rb -o 0.0.0.0
-ruby wshell.rb -o 0.0.0.0
+ruby wshell.rb

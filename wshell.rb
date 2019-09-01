@@ -2,13 +2,7 @@ require "sinatra"
 require "json"
 
 #set :port, 80
-<<<<<<< HEAD
-set :port, 88
-
-$password = "1234"
-=======
 #set :port, 88
->>>>>>> Tasks sorted by due date
 
 def save_thought(n_dink)
 	#format thought
@@ -66,10 +60,6 @@ get "/" do
 	data_hash = JSON.parse(file)
 	params["cmd"] = data_hash
 	erb :wshell
-<<<<<<< HEAD
-
-=======
->>>>>>> Tasks sorted by due date
 end
 
 
