@@ -33,6 +33,11 @@ def deleteDink(did)
 	for dink in data_hash
 		if !(dink["id"] == did.to_i)
 			new_data.push(dink)
+		else
+			File.open("./public/archive.json", "a") do |file|
+				file.puts dink.to_json
+				file.puts "\n"
+			end
 		end
 	end
 	File.open("./public/history.json","w") do |file|

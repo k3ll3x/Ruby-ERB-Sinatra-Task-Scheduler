@@ -29,6 +29,8 @@
                 <th>Timestamp</th>
                 <th>Tasks</th>
                 <th>Due-Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
                 <th>Delete</th>
             </tr>
             <% for i in params["cmd"] %>
@@ -45,6 +47,12 @@
                         </td>
                         <td>
                             <%= i["duedate"] %>
+                        </td>
+                        <td>
+                            <%= i["srttime"] %>
+                        </td>
+                        <td>
+                            <%= i["endtime"] %>
                         </td>
                         <td>
                             <button class="w3-button w3-red">delete</button>
