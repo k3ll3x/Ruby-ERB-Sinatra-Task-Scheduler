@@ -1317,3 +1317,354 @@ http://localhost:4567/history -> /history.json
 127.0.0.1 - - [30/Apr/2020:00:42:04 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0141
 127.0.0.1 - - [30/Apr/2020:00:42:04 CDT] "GET /favicon.ico HTTP/1.1" 404 0
 - -> /favicon.ico
+127.0.0.1 - - [30/Apr/2020:00:51:23 -0500] "POST /history HTTP/1.1" 200 32117 0.0113
+127.0.0.1 - - [30/Apr/2020:00:51:23 CDT] "POST /history HTTP/1.1" 200 32117
+http://localhost:4567/history -> /history
+127.0.0.1 - - [30/Apr/2020:00:51:23 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0026
+127.0.0.1 - - [30/Apr/2020:00:51:23 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [30/Apr/2020:00:51:23 -0500] "GET /history.json HTTP/1.1" 200 2689 0.0181
+127.0.0.1 - - [30/Apr/2020:00:51:23 CDT] "GET /history.json HTTP/1.1" 200 2689
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [30/Apr/2020:00:51:23 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0280
+127.0.0.1 - - [30/Apr/2020:00:51:23 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [30/Apr/2020:00:51:33 -0500] "POST /delete HTTP/1.1" 200 30894 0.0258
+127.0.0.1 - - [30/Apr/2020:00:51:33 CDT] "POST /delete HTTP/1.1" 200 30894
+http://localhost:4567/history -> /delete
+127.0.0.1 - - [30/Apr/2020:00:51:33 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0071
+127.0.0.1 - - [30/Apr/2020:00:51:33 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [30/Apr/2020:00:51:34 -0500] "GET /history.json HTTP/1.1" 200 2559 0.0028
+127.0.0.1 - - [30/Apr/2020:00:51:34 CDT] "GET /history.json HTTP/1.1" 200 2559
+http://localhost:4567/delete -> /history.json
+127.0.0.1 - - [30/Apr/2020:00:59:36 -0500] "POST /delete HTTP/1.1" 200 29658 0.0271
+127.0.0.1 - - [30/Apr/2020:00:59:36 CDT] "POST /delete HTTP/1.1" 200 29658
+http://localhost:4567/delete -> /delete
+127.0.0.1 - - [30/Apr/2020:00:59:36 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0081
+127.0.0.1 - - [30/Apr/2020:00:59:36 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [30/Apr/2020:00:59:36 -0500] "GET /history.json HTTP/1.1" 200 2416 0.0036
+127.0.0.1 - - [30/Apr/2020:00:59:36 CDT] "GET /history.json HTTP/1.1" 200 2416
+http://localhost:4567/delete -> /history.json
+127.0.0.1 - - [30/Apr/2020:14:46:13 -0500] "POST /history HTTP/1.1" 200 30858 0.0473
+127.0.0.1 - - [30/Apr/2020:14:46:13 CDT] "POST /history HTTP/1.1" 200 30858
+http://localhost:4567/delete -> /history
+127.0.0.1 - - [30/Apr/2020:14:46:13 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0049
+127.0.0.1 - - [30/Apr/2020:14:46:13 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [30/Apr/2020:14:46:13 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0066
+127.0.0.1 - - [30/Apr/2020:14:46:13 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [30/Apr/2020:14:46:14 -0500] "GET /history.json HTTP/1.1" 200 2523 0.0059
+127.0.0.1 - - [30/Apr/2020:14:46:14 CDT] "GET /history.json HTTP/1.1" 200 2523
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [30/Apr/2020:14:46:14 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0024
+127.0.0.1 - - [30/Apr/2020:14:46:14 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [30/Apr/2020:20:45:43 -0500] "POST /history HTTP/1.1" 200 32070 0.0318
+127.0.0.1 - - [30/Apr/2020:20:45:43 CDT] "POST /history HTTP/1.1" 200 32070
+http://localhost:4567/history -> /history
+127.0.0.1 - - [30/Apr/2020:20:45:43 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0050
+127.0.0.1 - - [30/Apr/2020:20:45:43 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [30/Apr/2020:20:45:44 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0013
+127.0.0.1 - - [30/Apr/2020:20:45:44 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [30/Apr/2020:20:45:44 -0500] "GET /history.json HTTP/1.1" 200 2642 0.0024
+127.0.0.1 - - [30/Apr/2020:20:45:44 CDT] "GET /history.json HTTP/1.1" 200 2642
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [30/Apr/2020:20:45:44 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0025
+127.0.0.1 - - [30/Apr/2020:20:45:44 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [01/May/2020:03:00:12 -0500] "POST /delete HTTP/1.1" 200 30786 0.0807
+127.0.0.1 - - [01/May/2020:03:00:12 CDT] "POST /delete HTTP/1.1" 200 30786
+http://localhost:4567/history -> /delete
+127.0.0.1 - - [01/May/2020:03:00:12 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0023
+127.0.0.1 - - [01/May/2020:03:00:12 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [01/May/2020:03:00:12 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0761
+127.0.0.1 - - [01/May/2020:03:00:12 CDT] "GET /css/lstyle.css HTTP/1.1" 200 0
+http://localhost:4567/delete -> /css/lstyle.css
+127.0.0.1 - - [01/May/2020:03:00:12 -0500] "GET /history.json HTTP/1.1" 200 2451 0.0025
+127.0.0.1 - - [01/May/2020:03:00:12 CDT] "GET /history.json HTTP/1.1" 200 2451
+http://localhost:4567/delete -> /history.json
+127.0.0.1 - - [01/May/2020:03:00:12 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0027
+127.0.0.1 - - [01/May/2020:03:00:12 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [01/May/2020:03:01:05 -0500] "POST /history HTTP/1.1" 200 32083 0.0237
+127.0.0.1 - - [01/May/2020:03:01:05 CDT] "POST /history HTTP/1.1" 200 32083
+http://localhost:4567/delete -> /history
+127.0.0.1 - - [01/May/2020:03:01:06 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0023
+127.0.0.1 - - [01/May/2020:03:01:06 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [01/May/2020:03:01:06 -0500] "GET /history.json HTTP/1.1" 200 2655 0.0140
+127.0.0.1 - - [01/May/2020:03:01:06 CDT] "GET /history.json HTTP/1.1" 200 2655
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [01/May/2020:03:01:06 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0026
+127.0.0.1 - - [01/May/2020:03:01:06 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [04/May/2020:18:30:18 -0500] "POST /history HTTP/1.1" 200 33290 0.1745
+127.0.0.1 - - [04/May/2020:18:30:18 CDT] "POST /history HTTP/1.1" 200 33290
+http://localhost:4567/history -> /history
+127.0.0.1 - - [04/May/2020:18:30:18 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0046
+127.0.0.1 - - [04/May/2020:18:30:18 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [04/May/2020:18:30:18 -0500] "GET /calendar.js HTTP/1.1" 304 - 0.0021
+127.0.0.1 - - [04/May/2020:18:30:18 CDT] "GET /calendar.js HTTP/1.1" 304 0
+http://localhost:4567/history -> /calendar.js
+127.0.0.1 - - [04/May/2020:18:30:18 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0302
+127.0.0.1 - - [04/May/2020:18:30:18 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [04/May/2020:18:30:20 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0018
+127.0.0.1 - - [04/May/2020:18:30:20 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [04/May/2020:18:30:20 -0500] "GET /history.json HTTP/1.1" 200 2769 0.0176
+127.0.0.1 - - [04/May/2020:18:30:20 CDT] "GET /history.json HTTP/1.1" 200 2769
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:05:39 -0500] "POST /history HTTP/1.1" 200 34575 0.1129
+127.0.0.1 - - [05/May/2020:13:05:39 CDT] "POST /history HTTP/1.1" 200 34575
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:13:05:41 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0016
+127.0.0.1 - - [05/May/2020:13:05:41 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:13:05:41 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0037
+127.0.0.1 - - [05/May/2020:13:05:41 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [05/May/2020:13:05:42 -0500] "GET /history.json HTTP/1.1" 200 2961 0.0025
+127.0.0.1 - - [05/May/2020:13:05:42 CDT] "GET /history.json HTTP/1.1" 200 2961
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:05:43 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0020
+127.0.0.1 - - [05/May/2020:13:05:43 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [05/May/2020:13:05:54 -0500] "POST /history HTTP/1.1" 200 35799 0.0187
+127.0.0.1 - - [05/May/2020:13:05:54 CDT] "POST /history HTTP/1.1" 200 35799
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:13:05:54 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0021
+127.0.0.1 - - [05/May/2020:13:05:54 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:13:05:54 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0087
+127.0.0.1 - - [05/May/2020:13:05:54 CDT] "GET /css/lstyle.css HTTP/1.1" 200 0
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [05/May/2020:13:05:55 -0500] "GET /history.json HTTP/1.1" 200 3092 0.0161
+127.0.0.1 - - [05/May/2020:13:05:55 CDT] "GET /history.json HTTP/1.1" 200 3092
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:05:55 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0080
+127.0.0.1 - - [05/May/2020:13:05:55 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [05/May/2020:13:06:14 -0500] "POST /history HTTP/1.1" 200 37009 0.0209
+127.0.0.1 - - [05/May/2020:13:06:14 CDT] "POST /history HTTP/1.1" 200 37009
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:13:06:14 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0056
+127.0.0.1 - - [05/May/2020:13:06:14 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:13:06:14 -0500] "GET /history.json HTTP/1.1" 200 3209 0.0088
+127.0.0.1 - - [05/May/2020:13:06:14 CDT] "GET /history.json HTTP/1.1" 200 3209
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:06:14 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0023
+127.0.0.1 - - [05/May/2020:13:06:14 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [05/May/2020:13:08:11 -0500] "POST /history HTTP/1.1" 200 38252 0.0199
+127.0.0.1 - - [05/May/2020:13:08:11 CDT] "POST /history HTTP/1.1" 200 38252
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:13:08:11 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0044
+127.0.0.1 - - [05/May/2020:13:08:11 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:13:08:12 -0500] "GET /history.json HTTP/1.1" 200 3359 0.0140
+127.0.0.1 - - [05/May/2020:13:08:12 CDT] "GET /history.json HTTP/1.1" 200 3359
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:08:12 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0018
+127.0.0.1 - - [05/May/2020:13:08:12 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [05/May/2020:13:11:28 -0500] "POST /history HTTP/1.1" 200 39518 0.0171
+127.0.0.1 - - [05/May/2020:13:11:28 CDT] "POST /history HTTP/1.1" 200 39518
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:13:11:28 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0022
+127.0.0.1 - - [05/May/2020:13:11:28 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:13:11:28 -0500] "GET /history.json HTTP/1.1" 200 3532 0.0029
+127.0.0.1 - - [05/May/2020:13:11:28 CDT] "GET /history.json HTTP/1.1" 200 3532
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [05/May/2020:13:11:28 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0112
+127.0.0.1 - - [05/May/2020:13:11:28 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [05/May/2020:22:16:21 -0500] "POST /history HTTP/1.1" 200 40745 0.1000
+127.0.0.1 - - [05/May/2020:22:16:21 CDT] "POST /history HTTP/1.1" 200 40745
+http://localhost:4567/history -> /history
+127.0.0.1 - - [05/May/2020:22:16:21 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0066
+127.0.0.1 - - [05/May/2020:22:16:21 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [05/May/2020:22:16:21 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0013
+127.0.0.1 - - [05/May/2020:22:16:21 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [05/May/2020:22:16:40 -0500] "GET /history.json HTTP/1.1" 200 3666 0.0057
+127.0.0.1 - - [05/May/2020:22:16:40 CDT] "GET /history.json HTTP/1.1" 200 3666
+http://localhost:4567/history -> /history.json
+[2020-05-06 21:17:01] INFO  WEBrick 1.4.2
+[2020-05-06 21:17:01] INFO  ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+== Sinatra (v2.0.7) has taken the stage on 4567 for development with backup from WEBrick
+[2020-05-06 21:17:01] INFO  WEBrick::HTTPServer#start: pid=119 port=4567
+127.0.0.1 - - [06/May/2020:21:17:34 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.3688
+127.0.0.1 - - [06/May/2020:21:17:34 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.7742
+127.0.0.1 - - [06/May/2020:21:17:34 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [06/May/2020:21:17:33 CDT] "GET /css/lstyle.css HTTP/1.1" 200 0
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [06/May/2020:21:17:34 -0500] "GET /history HTTP/1.1" 200 31219 1.3315
+127.0.0.1 - - [06/May/2020:21:17:33 CDT] "GET /history HTTP/1.1" 200 0
+http://localhost:4567/history -> /history
+127.0.0.1 - - [06/May/2020:21:17:34 -0500] "GET /history.json HTTP/1.1" 200 3666 0.0045
+127.0.0.1 - - [06/May/2020:21:17:34 CDT] "GET /history.json HTTP/1.1" 200 3666
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [06/May/2020:21:17:35 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0101
+127.0.0.1 - - [06/May/2020:21:17:35 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [06/May/2020:21:17:35 -0500] "GET / HTTP/1.1" 200 40745 0.0528
+127.0.0.1 - - [06/May/2020:21:17:35 CDT] "GET / HTTP/1.1" 200 40745
+- -> /
+127.0.0.1 - - [06/May/2020:21:17:35 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0050
+127.0.0.1 - - [06/May/2020:21:17:35 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/ -> /cstyle.css
+127.0.0.1 - - [06/May/2020:21:17:36 -0500] "GET /history.json HTTP/1.1" 200 3666 0.0036
+127.0.0.1 - - [06/May/2020:21:17:36 CDT] "GET /history.json HTTP/1.1" 200 3666
+http://localhost:4567/ -> /history.json
+127.0.0.1 - - [06/May/2020:21:17:36 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0079
+127.0.0.1 - - [06/May/2020:21:17:36 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [07/May/2020:00:05:58 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0145
+127.0.0.1 - - [07/May/2020:00:05:58 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/ -> /cstyle.css
+127.0.0.1 - - [07/May/2020:00:05:59 -0500] "GET /history.json HTTP/1.1" 200 3666 0.0086
+127.0.0.1 - - [07/May/2020:00:05:59 CDT] "GET /history.json HTTP/1.1" 200 3666
+http://localhost:4567/ -> /history.json
+127.0.0.1 - - [09/May/2020:00:13:19 -0500] "POST /history HTTP/1.1" 200 42006 0.2882
+127.0.0.1 - - [09/May/2020:00:13:18 CDT] "POST /history HTTP/1.1" 200 42006
+http://localhost:4567/ -> /history
+127.0.0.1 - - [09/May/2020:00:13:19 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0073
+127.0.0.1 - - [09/May/2020:00:13:19 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0848
+127.0.0.1 - - [09/May/2020:00:13:19 CDT] "GET /css/lstyle.css HTTP/1.1" 200 0
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [09/May/2020:00:13:19 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [09/May/2020:00:13:19 -0500] "GET /history.json HTTP/1.1" 200 3834 0.0330
+127.0.0.1 - - [09/May/2020:00:13:19 CDT] "GET /history.json HTTP/1.1" 200 3834
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [09/May/2020:00:13:20 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0015
+127.0.0.1 - - [09/May/2020:00:13:20 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [11/May/2020:23:46:04 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0245
+127.0.0.1 - - [11/May/2020:23:46:04 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [11/May/2020:23:46:05 -0500] "GET /history.json HTTP/1.1" 200 3834 0.0688
+127.0.0.1 - - [11/May/2020:23:46:05 CDT] "GET /history.json HTTP/1.1" 200 0
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [11/May/2020:23:46:17 -0500] "POST /delete HTTP/1.1" 200 40745 0.2138
+127.0.0.1 - - [11/May/2020:23:46:17 CDT] "POST /delete HTTP/1.1" 200 40745
+http://localhost:4567/history -> /delete
+127.0.0.1 - - [11/May/2020:23:46:17 -0500] "GET /calendar.js HTTP/1.1" 304 - 0.0072
+127.0.0.1 - - [11/May/2020:23:46:17 CDT] "GET /calendar.js HTTP/1.1" 304 0
+http://localhost:4567/delete -> /calendar.js
+127.0.0.1 - - [11/May/2020:23:46:17 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0344
+127.0.0.1 - - [11/May/2020:23:46:17 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [11/May/2020:23:46:17 -0500] "GET /history.json HTTP/1.1" 200 3666 0.0026
+127.0.0.1 - - [11/May/2020:23:46:17 CDT] "GET /history.json HTTP/1.1" 200 3666
+http://localhost:4567/delete -> /history.json
+127.0.0.1 - - [11/May/2020:23:46:18 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0035
+127.0.0.1 - - [11/May/2020:23:46:17 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [11/May/2020:23:46:23 -0500] "POST /delete HTTP/1.1" 200 39518 0.0162
+127.0.0.1 - - [11/May/2020:23:46:23 CDT] "POST /delete HTTP/1.1" 200 39518
+http://localhost:4567/delete -> /delete
+127.0.0.1 - - [11/May/2020:23:46:23 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0037
+127.0.0.1 - - [11/May/2020:23:46:23 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [11/May/2020:23:46:24 -0500] "GET /history.json HTTP/1.1" 200 3532 0.0032
+127.0.0.1 - - [11/May/2020:23:46:24 CDT] "GET /history.json HTTP/1.1" 200 3532
+http://localhost:4567/delete -> /history.json
+127.0.0.1 - - [11/May/2020:23:46:24 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0029
+127.0.0.1 - - [11/May/2020:23:46:24 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+127.0.0.1 - - [11/May/2020:23:46:35 -0500] "POST /history HTTP/1.1" 200 40759 0.0921
+127.0.0.1 - - [11/May/2020:23:46:35 CDT] "POST /history HTTP/1.1" 200 40759
+http://localhost:4567/delete -> /history
+127.0.0.1 - - [11/May/2020:23:46:35 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0026
+127.0.0.1 - - [11/May/2020:23:46:35 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [11/May/2020:23:46:35 -0500] "GET /history.json HTTP/1.1" 200 3680 0.0147
+127.0.0.1 - - [11/May/2020:23:46:35 CDT] "GET /history.json HTTP/1.1" 200 3680
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [11/May/2020:23:46:35 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0049
+127.0.0.1 - - [11/May/2020:23:46:35 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [15/May/2020:11:42:54 -0500] "GET /history HTTP/1.1" 200 31233 0.2306
+127.0.0.1 - - [15/May/2020:11:42:53 CDT] "GET /history HTTP/1.1" 200 31233
+- -> /history
+127.0.0.1 - - [15/May/2020:11:42:54 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0055
+127.0.0.1 - - [15/May/2020:11:42:54 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [15/May/2020:11:42:54 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0025
+127.0.0.1 - - [15/May/2020:11:42:54 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [15/May/2020:11:42:55 -0500] "GET /history.json HTTP/1.1" 200 3680 0.0022
+127.0.0.1 - - [15/May/2020:11:42:55 CDT] "GET /history.json HTTP/1.1" 200 3680
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [15/May/2020:11:42:55 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0021
+127.0.0.1 - - [15/May/2020:11:42:55 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+[2020-05-15 12:24:10] INFO  WEBrick 1.4.2
+[2020-05-15 12:24:10] INFO  ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+== Sinatra (v2.0.7) has taken the stage on 4567 for development with backup from WEBrick
+[2020-05-15 12:24:10] INFO  WEBrick::HTTPServer#start: pid=3558 port=4567
+127.0.0.1 - - [15/May/2020:12:24:12 -0500] "GET /history HTTP/1.1" 200 41815 0.1502
+127.0.0.1 - - [15/May/2020:12:24:12 CDT] "GET /history HTTP/1.1" 200 41815
+- -> /history
+127.0.0.1 - - [15/May/2020:12:24:12 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0021
+127.0.0.1 - - [15/May/2020:12:24:12 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [15/May/2020:12:24:12 -0500] "GET /css/lstyle.css HTTP/1.1" 200 232 0.0060
+127.0.0.1 - - [15/May/2020:12:24:12 CDT] "GET /css/lstyle.css HTTP/1.1" 200 232
+http://localhost:4567/history -> /css/lstyle.css
+127.0.0.1 - - [15/May/2020:12:24:12 -0500] "GET /history.json HTTP/1.1" 200 3680 0.0026
+127.0.0.1 - - [15/May/2020:12:24:12 CDT] "GET /history.json HTTP/1.1" 200 3680
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [15/May/2020:12:24:12 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0038
+127.0.0.1 - - [15/May/2020:12:24:12 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+[2020-05-15 12:27:29] INFO  WEBrick 1.4.2
+[2020-05-15 12:27:29] INFO  ruby 2.5.1 (2018-03-29) [x86_64-linux-gnu]
+== Sinatra (v2.0.7) has taken the stage on 4567 for development with backup from WEBrick
+[2020-05-15 12:27:29] INFO  WEBrick::HTTPServer#start: pid=3608 port=4567
+127.0.0.1 - - [15/May/2020:12:27:33 -0500] "GET / HTTP/1.1" 200 54851 0.0615
+127.0.0.1 - - [15/May/2020:12:27:33 CDT] "GET / HTTP/1.1" 200 54851
+- -> /
+127.0.0.1 - - [15/May/2020:12:27:34 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0050
+127.0.0.1 - - [15/May/2020:12:27:34 -0500] "GET /css/lstyle.css HTTP/1.1" 304 - 0.0057
+127.0.0.1 - - [15/May/2020:12:27:34 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/ -> /cstyle.css
+127.0.0.1 - - [15/May/2020:12:27:34 CDT] "GET /css/lstyle.css HTTP/1.1" 304 0
+http://localhost:4567/ -> /css/lstyle.css
+127.0.0.1 - - [15/May/2020:12:27:34 -0500] "GET /history.json HTTP/1.1" 200 3680 0.0020
+127.0.0.1 - - [15/May/2020:12:27:34 CDT] "GET /history.json HTTP/1.1" 200 3680
+http://localhost:4567/ -> /history.json
+127.0.0.1 - - [15/May/2020:12:27:34 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0022
+127.0.0.1 - - [15/May/2020:12:27:34 CDT] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+127.0.0.1 - - [15/May/2020:12:28:06 -0500] "POST /delete HTTP/1.1" 200 53089 0.0448
+127.0.0.1 - - [15/May/2020:12:28:05 CDT] "POST /delete HTTP/1.1" 200 53089
+http://localhost:4567/ -> /delete
+127.0.0.1 - - [15/May/2020:12:28:06 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0051
+127.0.0.1 - - [15/May/2020:12:28:06 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/delete -> /cstyle.css
+127.0.0.1 - - [15/May/2020:12:28:14 -0500] "POST /history HTTP/1.1" 200 54853 0.0801
+127.0.0.1 - - [15/May/2020:12:28:14 CDT] "POST /history HTTP/1.1" 200 54853
+http://localhost:4567/delete -> /history
+127.0.0.1 - - [15/May/2020:12:28:14 -0500] "GET /cstyle.css HTTP/1.1" 404 468 0.0016
+127.0.0.1 - - [15/May/2020:12:28:14 CDT] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/history -> /cstyle.css
+127.0.0.1 - - [15/May/2020:12:28:14 -0500] "GET /history.json HTTP/1.1" 200 3682 0.0125
+127.0.0.1 - - [15/May/2020:12:28:14 CDT] "GET /history.json HTTP/1.1" 200 0
+http://localhost:4567/history -> /history.json
+127.0.0.1 - - [15/May/2020:12:28:14 -0500] "GET /favicon.ico HTTP/1.1" 404 469 0.0044
+127.0.0.1 - - [15/May/2020:12:28:14 CDT] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico

@@ -25,7 +25,7 @@ def save_thought(n_dink)
 	new_data
 end
 
-def deleteDink(did)
+def deleteDink(did, reason)
 	#read json
 	file = File.read("./public/history.json")
 	data_hash = JSON.parse(file)
@@ -34,6 +34,7 @@ def deleteDink(did)
 		if !(dink["id"] == did.to_i)
 			new_data.push(dink)
 		else
+			dink["reason"] = reason
 			File.open("./public/archive.json", "a") do |file|
 				file.puts dink.to_json
 				file.puts "\n"
@@ -51,7 +52,15 @@ post "/history" do
 end
 
 post "/delete" do
-	deleteDink(params["id"])
+	reason = ""
+	if params["edit"] == "on"
+		reason = "edit"
+	elsif params["forget"] == "on"
+		reason = "forget"
+	elsif params["done"] == "on"
+		reason = "done"
+	end
+	deleteDink(params["id"], reason)
 	#Load from file and send params
 	file = File.read("./public/history.json")
 	data_hash = JSON.parse(file)
