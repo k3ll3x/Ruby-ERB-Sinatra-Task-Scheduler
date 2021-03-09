@@ -8,11 +8,6 @@
     <% end %>
 </head>
 <body class="w3-container w3-white">
-    <% File.open("views/header.erb","r") do |content| %>
-        <% content.each_line do |line| %>
-            <%= line %>
-        <% end %>
-    <% end %>
     <div class="w3-display-container w3-display-topmiddle w3-light-gray" style="width:98%">
         <div class="w3-container w3-lightgray">
             <h1 class="w3-center">Scheduler</h1>

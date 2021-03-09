@@ -8,8 +8,13 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    width: 15%;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.w3-container {
+    width:98%;
 }

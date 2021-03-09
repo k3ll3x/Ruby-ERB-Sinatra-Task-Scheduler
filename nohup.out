@@ -197,3 +197,110 @@ http://localhost:4567/ -> /cstyle.css
 == Sinatra has ended his set (crowd applauds)
 [2021-03-08 22:28:17] INFO  going to shutdown ...
 [2021-03-08 22:28:17] INFO  WEBrick::HTTPServer#start done.
+[2021-03-08 23:51:40] INFO  WEBrick 1.4.2
+[2021-03-08 23:51:40] INFO  ruby 2.5.5 (2019-03-15) [x86_64-linux-gnu]
+== Sinatra (v2.1.0) has taken the stage on 4567 for development with backup from WEBrick
+[2021-03-08 23:51:40] INFO  WEBrick::HTTPServer#start: pid=16375 port=4567
+::1 - - [08/Mar/2021:23:51:46 -0600] "GET /action HTTP/1.1" 302 - 0.0066
+::1 - - [08/Mar/2021:23:51:46 CST] "GET /action HTTP/1.1" 302 0
+- -> /action
+::1 - - [08/Mar/2021:23:51:46 -0600] "GET / HTTP/1.1" 200 66824 0.0096
+::1 - - [08/Mar/2021:23:51:46 CST] "GET / HTTP/1.1" 200 66824
+- -> /
+::1 - - [08/Mar/2021:23:51:46 -0600] "GET /css/lstyle.css HTTP/1.1" 304 - 0.0079
+::1 - - [08/Mar/2021:23:51:46 CST] "GET /css/lstyle.css HTTP/1.1" 304 0
+http://localhost:4567/ -> /css/lstyle.css
+::1 - - [08/Mar/2021:23:51:46 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0009
+::1 - - [08/Mar/2021:23:51:46 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/ -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:51:47 -0600] "GET /history.json HTTP/1.1" 200 4764 0.0008
+127.0.0.1 - - [08/Mar/2021:23:51:47 CST] "GET /history.json HTTP/1.1" 200 4764
+http://localhost:4567/ -> /history.json
+::1 - - [08/Mar/2021:23:52:02 -0600] "POST /action HTTP/1.1" 200 66830 0.0099
+::1 - - [08/Mar/2021:23:52:02 CST] "POST /action HTTP/1.1" 200 66830
+http://localhost:4567/ -> /action
+127.0.0.1 - - [08/Mar/2021:23:52:02 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0010
+127.0.0.1 - - [08/Mar/2021:23:52:02 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:03 -0600] "GET /history.json HTTP/1.1" 200 4371 0.0008
+127.0.0.1 - - [08/Mar/2021:23:52:03 CST] "GET /history.json HTTP/1.1" 200 4371
+http://localhost:4567/action -> /history.json
+::1 - - [08/Mar/2021:23:52:13 -0600] "POST /action HTTP/1.1" 200 66833 0.0052
+::1 - - [08/Mar/2021:23:52:13 CST] "POST /action HTTP/1.1" 200 66833
+http://localhost:4567/action -> /action
+127.0.0.1 - - [08/Mar/2021:23:52:13 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0010
+127.0.0.1 - - [08/Mar/2021:23:52:13 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:13 -0600] "GET /history.json HTTP/1.1" 200 4374 0.0008
+127.0.0.1 - - [08/Mar/2021:23:52:13 CST] "GET /history.json HTTP/1.1" 200 4374
+http://localhost:4567/action -> /history.json
+::1 - - [08/Mar/2021:23:52:28 -0600] "POST /action HTTP/1.1" 200 66843 0.0118
+::1 - - [08/Mar/2021:23:52:28 CST] "POST /action HTTP/1.1" 200 66843
+http://localhost:4567/action -> /action
+127.0.0.1 - - [08/Mar/2021:23:52:29 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0008
+127.0.0.1 - - [08/Mar/2021:23:52:29 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:29 -0600] "GET /history.json HTTP/1.1" 200 4384 0.0005
+127.0.0.1 - - [08/Mar/2021:23:52:29 CST] "GET /history.json HTTP/1.1" 200 4384
+http://localhost:4567/action -> /history.json
+127.0.0.1 - - [08/Mar/2021:23:52:30 -0600] "GET /favicon.ico HTTP/1.1" 404 469 0.0010
+127.0.0.1 - - [08/Mar/2021:23:52:30 CST] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+::1 - - [08/Mar/2021:23:52:39 -0600] "POST /action HTTP/1.1" 200 66843 0.0081
+::1 - - [08/Mar/2021:23:52:39 CST] "POST /action HTTP/1.1" 200 66843
+http://localhost:4567/action -> /action
+::1 - - [08/Mar/2021:23:52:39 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0018
+::1 - - [08/Mar/2021:23:52:39 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:40 -0600] "GET /history.json HTTP/1.1" 200 4384 0.0007
+127.0.0.1 - - [08/Mar/2021:23:52:40 CST] "GET /history.json HTTP/1.1" 200 4384
+http://localhost:4567/action -> /history.json
+127.0.0.1 - - [08/Mar/2021:23:52:40 -0600] "GET /favicon.ico HTTP/1.1" 404 469 0.0007
+127.0.0.1 - - [08/Mar/2021:23:52:40 CST] "GET /favicon.ico HTTP/1.1" 404 469
+- -> /favicon.ico
+[2021-03-08 23:52:40] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:12 
+	/usr/lib/ruby/2.5.0/webrick/httpserver.rb:82:in `eof?'
+	/usr/lib/ruby/2.5.0/webrick/httpserver.rb:82:in `run'
+	/usr/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+::1 - - [08/Mar/2021:23:52:53 -0600] "POST /action HTTP/1.1" 200 66848 0.0080
+::1 - - [08/Mar/2021:23:52:53 CST] "POST /action HTTP/1.1" 200 66848
+http://localhost:4567/action -> /action
+::1 - - [08/Mar/2021:23:52:53 -0600] "GET /css/lstyle.css HTTP/1.1" 304 - 0.0007
+::1 - - [08/Mar/2021:23:52:53 CST] "GET /css/lstyle.css HTTP/1.1" 304 0
+http://localhost:4567/action -> /css/lstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:53 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0010
+127.0.0.1 - - [08/Mar/2021:23:52:53 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:52:53 -0600] "GET /history.json HTTP/1.1" 200 4389 0.0008
+127.0.0.1 - - [08/Mar/2021:23:52:53 CST] "GET /history.json HTTP/1.1" 200 4389
+http://localhost:4567/action -> /history.json
+127.0.0.1 - - [08/Mar/2021:23:52:54 -0600] "GET /favicon.ico HTTP/1.1" 404 469 0.0011
+127.0.0.1 - - [08/Mar/2021:23:52:54 CST] "GET /favicon.ico HTTP/1.1" 404 0
+- -> /favicon.ico
+::1 - - [08/Mar/2021:23:53:11 -0600] "POST /action HTTP/1.1" 200 65086 0.0117
+::1 - - [08/Mar/2021:23:53:11 CST] "POST /action HTTP/1.1" 200 65086
+http://localhost:4567/action -> /action
+::1 - - [08/Mar/2021:23:53:12 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0009
+::1 - - [08/Mar/2021:23:53:12 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:53:12 -0600] "GET /history.json HTTP/1.1" 200 4266 0.0007
+127.0.0.1 - - [08/Mar/2021:23:53:12 CST] "GET /history.json HTTP/1.1" 200 4266
+http://localhost:4567/action -> /history.json
+::1 - - [08/Mar/2021:23:53:19 -0600] "POST /action HTTP/1.1" 200 63319 0.0049
+::1 - - [08/Mar/2021:23:53:19 CST] "POST /action HTTP/1.1" 200 63319
+http://localhost:4567/action -> /action
+127.0.0.1 - - [08/Mar/2021:23:53:19 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0009
+127.0.0.1 - - [08/Mar/2021:23:53:19 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:53:19 -0600] "GET /history.json HTTP/1.1" 200 4138 0.0007
+127.0.0.1 - - [08/Mar/2021:23:53:19 CST] "GET /history.json HTTP/1.1" 200 4138
+http://localhost:4567/action -> /history.json
+::1 - - [08/Mar/2021:23:53:23 -0600] "POST /action HTTP/1.1" 200 61562 0.0051
+::1 - - [08/Mar/2021:23:53:23 CST] "POST /action HTTP/1.1" 200 61562
+http://localhost:4567/action -> /action
+127.0.0.1 - - [08/Mar/2021:23:53:24 -0600] "GET /cstyle.css HTTP/1.1" 404 468 0.0010
+127.0.0.1 - - [08/Mar/2021:23:53:24 CST] "GET /cstyle.css HTTP/1.1" 404 468
+http://localhost:4567/action -> /cstyle.css
+127.0.0.1 - - [08/Mar/2021:23:53:24 -0600] "GET /history.json HTTP/1.1" 200 4020 0.0007
+127.0.0.1 - - [08/Mar/2021:23:53:24 CST] "GET /history.json HTTP/1.1" 200 4020
+http://localhost:4567/action -> /history.json

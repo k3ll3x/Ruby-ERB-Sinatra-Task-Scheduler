@@ -46,27 +46,30 @@ def updateItem(updatedItem, reason)
 end
 
 def deleteDink(did, reason)
-	puts did
-	puts reason
 	#read json
 	file = File.read("./public/history.json")
 	data_hash = JSON.parse(file)
 	new_data = []
 	for dink in data_hash
 		if dink["id"].to_i != did.to_i
-			puts "true"
 			new_data.push(dink)
 		else
 			dink["reason"] = reason
-			File.open("./public/archive", "a") do |file|
-				text = "timestamp:\t%s\naction:\t%s\n\n\t%s\n\n" % [ dink["timestamp"], reason, dink["comd"] ]
-				file.puts text
+			if reason != "forget"
+				File.open("./public/archive", "a") do |file|
+					text = "timestamp:\t%s\naction:\t%s\n\n\t%s\n\n" % [ dink["timestamp"], reason, dink["comd"] ]
+					file.puts text
+				end
 			end
 		end
 	end
 	File.open("./public/history.json","w") do |file|
 		file.write(new_data.to_json)
 	end
+end
+
+get "/history" do
+	redirect back
 end
 
 post "/history" do
