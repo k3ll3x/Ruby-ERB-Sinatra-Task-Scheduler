@@ -13,7 +13,7 @@
             <%= line %>
         <% end %>
     <% end %>
-    <div class="w3-display-container w3-display-topmiddle w3-light-gray" style="width:70%">
+    <div class="w3-display-container w3-display-topmiddle w3-light-gray" style="width:98%">
         <div class="w3-container w3-lightgray">
             <h1 class="w3-center">Scheduler</h1>
             <br>
@@ -59,45 +59,42 @@
                         <th>Timestamp</th>
                         <th>Task</th>
                         <th>Due-Date</th>
-                        <th>Start Time</th>
-                        <th>End Time</th>
+                        <th>Start & End Time</th>
                         <th>Delete Reason</th>
                         <th><form action="/delete_all" method="get"><button class="w3-button w3-orange">Delete All</button></form></th>
                     </tr>
-                        <% for i in params["cmd"] %>
-                            <form action="/delete" method="post">
-                                <tr>
-                                    <td>
-                                        <input type="text" name="id" value="<%= i["id"] %>" readonly>
-                                    </td>
-                                    <td>
-                                        <%= i["timestamp"] %>
-                                    </td>
-                                    <td>
-                                        <%= i["comd"] %>
-                                    </td>
-                                    <td>
-                                        <%= i["duedate"] %>
-                                    </td>
-                                    <td>
-                                        <%= i["srttime"] %>
-                                    </td>
-                                    <td>
-                                        <%= i["endtime"] %>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <input type="checkbox" name="edit">&nbsp;<label for="edit">Edit</label><br>
-                                            <input type="checkbox" name="forget">&nbsp;<label for="forget">Forget</label><br>
-                                            <input type="checkbox" name="done">&nbsp;<label for="done">Done</label><br>
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <button class="w3-button w3-red">delete</button>
-                                    </td>
-                                </tr>
-                            </form>
-                        <% end %>
+                    <% for i in params["cmd"] %>
+                        <form action="/action" method="post">
+                            <tr>
+                                <td>
+                                    <input type="text" name="id" value="<%= i["id"] %>" readonly>
+                                </td>
+                                <td>
+                                    <%= i["timestamp"] %>
+                                </td>
+                                <td>
+                                    <textarea cols="40" rows="5" name="comd"><%= i["comd"] %></textarea>
+                                </td>
+                                <td>
+                                    <input type="date" name="duedate" value="<%= i["duedate"] %>"/>
+                                </td>
+                                <td>
+                                    <input type="time" name="srttime" value="<%= i["srttime"] %>" min="00:00" max="24:00"/><br>
+                                    <input type="time" name="endtime" value="<%= i["endtime"] %>" min="00:00" max="24:00"/>
+                                </td>
+                                <td>
+                                    <p>
+                                        <input type="radio" name="reason" value="edit">&nbsp;Edit</input><br>
+                                        <input type="radio" name="reason" value="forget">&nbsp;Forget</input><br>
+                                        <input type="radio" name="reason" value="done">&nbsp;Done</input><br>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button class="w3-button w3-blue">edit</button>
+                                </td>
+                            </tr>
+                        </form>
+                    <% end %>
                     </table>
                 <br>
             </div>

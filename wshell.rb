@@ -25,19 +25,42 @@ def save_thought(n_dink)
 	new_data
 end
 
-def deleteDink(did, reason)
+def updateItem(updatedItem, reason)
 	#read json
 	file = File.read("./public/history.json")
 	data_hash = JSON.parse(file)
 	new_data = []
 	for dink in data_hash
-		if !(dink["id"] == did.to_i)
+		if (dink["id"] == updatedItem["id"].to_i)
+			dink["comd"] = updatedItem["comd"]
+			dink["duedate"] = updatedItem["duedate"]
+			dink["srttime"] = updatedItem["srttime"]
+			dink["endtime"] = updatedItem["endtime"]
+			dink["id"] = updatedItem["id"].to_i
+		end
+		new_data.push(dink)
+	end
+	File.open("./public/history.json","w") do |file|
+		file.write(new_data.to_json)
+	end
+end
+
+def deleteDink(did, reason)
+	puts did
+	puts reason
+	#read json
+	file = File.read("./public/history.json")
+	data_hash = JSON.parse(file)
+	new_data = []
+	for dink in data_hash
+		if dink["id"].to_i != did.to_i
+			puts "true"
 			new_data.push(dink)
 		else
 			dink["reason"] = reason
-			File.open("./public/archive.json", "a") do |file|
-				file.puts dink.to_json
-				file.puts "\n"
+			File.open("./public/archive", "a") do |file|
+				text = "timestamp:\t%s\naction:\t%s\n\n\t%s\n\n" % [ dink["timestamp"], reason, dink["comd"] ]
+				file.puts text
 			end
 		end
 	end
@@ -51,16 +74,21 @@ post "/history" do
 	erb :wshell
 end
 
-post "/delete" do
-	reason = ""
-	if params["edit"] == "on"
-		reason = "edit"
-	elsif params["forget"] == "on"
-		reason = "forget"
-	elsif params["done"] == "on"
-		reason = "done"
+get "/action" do
+	redirect back
+end
+
+post "/action" do
+	if params["reason"] == "edit"
+		updateItem(params, params["reason"])
+	elsif params["reason"] == "forget"
+		deleteDink(params["id"], params["reason"])
+	elsif params["reason"] == "done"
+		deleteDink(params["id"], params["reason"])
+	else
+		updateItem(params, params["reason"])
 	end
-	deleteDink(params["id"], reason)
+	#deleteDink(params["id"], reason)
 	#Load from file and send params
 	file = File.read("./public/history.json")
 	data_hash = JSON.parse(file)
@@ -80,12 +108,4 @@ end
 get "/delete_all" do
 	fork { exec('echo "[]" > public/history.json') }
 	erb :wshell
-end
-
-get "/history" do
-	#Load from file and send params
-	file = File.read("./public/history.json")
-	data_hash = JSON.parse(file)
-	params["cmd"] = data_hash
-	erb :commands
 end
